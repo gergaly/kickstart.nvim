@@ -627,6 +627,13 @@ require('lazy').setup({
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         -- ts_ls = {},
         --
+        erlangls = {
+          -- Start erlang language server in debug mode
+          -- cmd = { 'erlang_ls', '-l', 'debug', '-d', '/home/ebertge/tmp/cigi' },
+          cmd = { 'erlang_ls' },
+          filetypes = { 'erlang' },
+          single_file_support = false,
+        },
 
         lua_ls = {
           -- cmd = { ... },
